@@ -43,7 +43,9 @@ a{color:inherit}
 .nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
 .nav.scrolled{border-color:var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
-.brand{font-family:var(--serif);font-size:1.5rem;text-decoration:none;letter-spacing:.01em}
+.brand{font-family:var(--serif);font-size:1.5rem;text-decoration:none;letter-spacing:.01em;display:inline-flex;align-items:center;gap:.6rem}
+.avatar{width:34px;height:34px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
+.portrait{width:140px;height:140px;border-radius:50%;object-fit:cover;border:1px solid var(--line);box-shadow:0 10px 30px rgba(0,0,0,.12);margin-bottom:1.4rem;display:block}
 .links{display:flex;gap:4px;align-items:center}
 .links a{font-size:.9rem;text-decoration:none;color:var(--muted);padding:.4rem .75rem;border-radius:99px;transition:color .2s,background .2s}
 .links a:hover,.links a.active{color:var(--ink);background:var(--accent-soft)}
@@ -229,7 +231,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <header class="nav" id="nav">
   <div class="wrap">
-    <a class="brand" href="#top">Sandeep Tomar</a>
+    <a class="brand" href="#top"><img class="avatar" src="sandeep.jpg" alt="" width="34" height="34" onerror="this.remove()">Sandeep Tomar</a>
     <nav class="links" aria-label="Sections">
       <a href="#work" data-s="work">Work</a>
       <a href="#process" data-s="process">Process</a>
@@ -359,6 +361,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <section id="about">
 <div class="wrap about">
   <div>
+    <img class="portrait rv" src="sandeep.jpg" alt="Portrait of Sandeep Tomar" width="140" height="140" loading="lazy" onerror="this.remove()">
     <div class="eyebrow rv">About</div>
     <h2 class="rv">Learning operations, with a founder&rsquo;s eye.</h2>
     <p class="rv">I started in hospitality, leading a 60-person dining team on P&amp;O Cruises with an NPS above 80 on 85%+ of cruises. I moved into product at SearchFinn, founded Phatse, and then spent four years at K2U running a Salesforce training library.</p>
