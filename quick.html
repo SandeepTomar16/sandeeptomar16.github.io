@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Sandeep Tomar | Product Manager, Learning Products &amp; Marketplaces</title>
+<meta name="description" content="Sandeep Tomar turns customer conversations into products. 57-course EdTech portfolio, AI-assisted course updates, marketplace founder. Open to remote and Gurgaon/NCR roles.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sandeep Tomar | Product Manager, Learning Products &amp; Marketplaces">
+<meta property="og:description" content="I turn customer conversations into products. 57-course EdTech portfolio, AI-assisted course updates, marketplace founder.">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#faf8f4; --surface:#ffffff; --ink:#14120f; --muted:#6a655b; --line:#e7e2d7;
+  --accent:#0f766e; --accent-ink:#ffffff; --accent-soft:#e2f1ee; --bar-before:#b9b0a0;
+  --serif:'Instrument Serif',Georgia,'Times New Roman',serif;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e0d0b; --surface:#171512; --ink:#f4efe6; --muted:#a29c8f; --line:#2b2823;
+    --accent:#3dd1c0; --accent-ink:#0e0d0b; --accent-soft:#12302d; --bar-before:#5d574c;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e0d0b; --surface:#171512; --ink:#f4efe6; --muted:#a29c8f; --line:#2b2823;
+  --accent:#3dd1c0; --accent-ink:#0e0d0b; --accent-soft:#12302d; --bar-before:#5d574c;
+}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(18px,4vw,32px)}
+.progress{position:fixed;left:0;top:0;height:3px;width:0;background:var(--accent);z-index:100}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+.nav.scrolled{border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.brand{font-family:var(--serif);font-size:1.5rem;text-decoration:none;letter-spacing:.01em;display:inline-flex;align-items:center;gap:.6rem}
+.avatar{width:34px;height:34px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
+.portrait{width:140px;height:140px;border-radius:50%;object-fit:cover;border:1px solid var(--line);box-shadow:0 10px 30px rgba(0,0,0,.12);margin-bottom:1.4rem;display:block}
+.links{display:flex;gap:4px;align-items:center}
+.links a{font-size:.9rem;text-decoration:none;color:var(--muted);padding:.4rem .75rem;border-radius:99px;transition:color .2s,background .2s}
+.links a:hover,.links a.active{color:var(--ink);background:var(--accent-soft)}
+.nav-r{display:flex;gap:8px;align-items:center}
+.icon-btn{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;display:grid;place-items:center;font-size:1rem;transition:transform .2s}
+.icon-btn:hover{transform:rotate(18deg)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1.2rem;border-radius:99px;border:1px solid var(--ink);background:var(--ink);color:var(--bg);font:500 .95rem var(--sans);text-decoration:none;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.15)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--ink)}
+.btn.sm{padding:.5rem 1rem;font-size:.88rem}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* hero */
+.hero{padding:clamp(28px,5vw,64px) 0 clamp(36px,6vw,70px)}
+.status{display:inline-flex;align-items:center;gap:.6rem;font-size:.85rem;padding:.4rem .9rem;border:1px solid var(--line);border-radius:99px;background:var(--surface);color:var(--muted)}
+.dot{width:9px;height:9px;border-radius:50%;background:#22a06b;animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(34,160,107,.55)}70%{box-shadow:0 0 0 9px rgba(34,160,107,0)}100%{box-shadow:0 0 0 0 rgba(34,160,107,0)}}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.5rem,7vw,5.6rem);line-height:1.02;letter-spacing:-.02em;margin:1.1rem 0 1.2rem;max-width:15em}
+h1 em{color:var(--accent);font-style:italic}
+.lede{font-size:clamp(1.02rem,1.8vw,1.25rem);color:var(--muted);max-width:40em;margin:0 0 1.6rem}
+.cta{display:flex;gap:.7rem;flex-wrap:wrap}
+.proof{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:clamp(28px,4.5vw,48px);border-top:1px solid var(--line)}
+.proof>div{padding:1.4rem 1rem 0 0;position:relative}
+.proof>div+div{padding-left:1.2rem;border-left:1px solid var(--line)}
+.big{font-family:var(--serif);font-size:clamp(2.2rem,4.6vw,3.6rem);line-height:1;color:var(--accent)}
+.cap{font-size:.86rem;color:var(--muted);margin-top:.5rem;max-width:16em}
+
+/* sections */
+section{padding:clamp(48px,8vw,96px) 0}
+.eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.06;letter-spacing:-.015em;margin:.5rem 0 .6rem}
+.sub{color:var(--muted);max-width:38em;margin:0 0 2rem}
+
+/* cases */
+.case{border-top:1px solid var(--line)}
+.case:last-child{border-bottom:1px solid var(--line)}
+.case-head{display:grid;grid-template-columns:3.2rem 1fr auto;gap:1rem;align-items:center;width:100%;background:none;border:0;color:inherit;font:inherit;text-align:left;padding:1.5rem 0;cursor:pointer}
+.case-head .n{font-size:.85rem;color:var(--muted)}
+.case-head .t{font-family:var(--serif);font-size:clamp(1.4rem,3vw,2.1rem);line-height:1.12;transition:color .2s}
+.case-head:hover .t{color:var(--accent)}
+.case-head .m{display:block;font:400 .85rem var(--sans);color:var(--muted);margin-top:.35rem}
+.plus{width:36px;height:36px;border-radius:50%;border:1px solid var(--line);position:relative;transition:transform .35s,background .25s,border-color .25s}
+.plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:1.5px;background:var(--ink);transform:translate(-50%,-50%);transition:transform .35s,background .25s}
+.plus::after{transform:translate(-50%,-50%) rotate(90deg)}
+.case.open .plus{transform:rotate(180deg);background:var(--accent);border-color:var(--accent)}
+.case.open .plus::before,.case.open .plus::after{background:var(--accent-ink)}
+.case.open .plus::after{transform:translate(-50%,-50%) rotate(0)}
+.body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s cubic-bezier(.2,.8,.2,1)}
+.case.open .body{grid-template-rows:1fr}
+.body>div{overflow:hidden}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,3vw,36px);padding:.2rem 0 2rem 4.2rem}
+.cols h4{margin:0 0 .5rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.cols p,.cols li{font-size:.95rem;color:var(--muted);margin:.35rem 0}
+.cols ul{margin:0;padding-left:1.1rem}
+.cols b{color:var(--ink);font-weight:600}
+.chart{margin:0 0 1.4rem 4.2rem;max-width:560px;display:grid;gap:.9rem}
+.bar .lbl{font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:.3rem}
+.track{height:2rem;border-radius:.5rem;background:var(--accent-soft);overflow:hidden}
+.fill{height:100%;width:0;border-radius:.5rem;transition:width 1.3s cubic-bezier(.2,.8,.2,1) .15s;display:flex;align-items:center;padding-left:.8rem;font-size:.82rem;font-weight:600;color:#fff;white-space:nowrap}
+.case.open .fill{width:var(--w)}
+.fill.b{background:var(--bar-before)}
+.fill.a{background:var(--accent);color:var(--accent-ink)}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 1.2rem 4.2rem}
+.tag{font-size:.78rem;padding:.25rem .7rem;border-radius:99px;background:var(--accent-soft);color:var(--accent);font-weight:500}
+
+/* process + principles */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,2vw,24px);counter-reset:s}
+.step{padding:1.4rem;border:1px solid var(--line);border-radius:18px;background:var(--surface);counter-increment:s;transition:transform .3s,border-color .3s}
+.step:hover{transform:translateY(-4px);border-color:var(--accent)}
+.step::before{content:"0" counter(s);font-family:var(--serif);font-size:1.8rem;color:var(--accent)}
+.step h3{font-size:1.02rem;margin:.4rem 0 .4rem}
+.step p{margin:0;font-size:.92rem;color:var(--muted)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(14px,2vw,24px)}
+.pcard{padding:1.5rem;border-radius:18px;background:var(--accent-soft)}
+.pcard h3{font-family:var(--serif);font-weight:400;font-size:1.5rem;margin:0 0 .4rem}
+.pcard p{margin:0;color:var(--muted);font-size:.95rem}
+
+/* about */
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(24px,5vw,64px)}
+.about p{color:var(--muted);margin:0 0 1rem}
+.list h3{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 .6rem}
+.list ul{list-style:none;margin:0 0 1.6rem;padding:0}
+.list li{padding:.65rem 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.list li span{display:block;font-size:.84rem;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+.chip{font-size:.85rem;padding:.4rem .9rem;border-radius:99px;border:1px solid var(--line);background:var(--surface);transition:border-color .2s,transform .2s}
+.chip:hover{border-color:var(--accent);transform:translateY(-2px)}
+
+/* faq */
+.faq{border-top:1px solid var(--line)}
+.faq:last-of-type{border-bottom:1px solid var(--line)}
+.faq button{display:flex;justify-content:space-between;align-items:center;gap:1rem;width:100%;background:none;border:0;color:inherit;font:500 1.05rem var(--sans);text-align:left;padding:1.2rem 0;cursor:pointer}
+.faq .a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s ease}
+.faq.open .a{grid-template-rows:1fr}
+.faq .a>div{overflow:hidden}
+.faq .a p{margin:0 0 1.3rem;color:var(--muted);max-width:44em}
+.faq .plus{flex:none;width:30px;height:30px}
+
+/* contact */
+.contact{text-align:center;border-radius:28px;background:var(--ink);color:var(--bg);padding:clamp(40px,7vw,84px) 24px}
+.contact h2{margin:.4rem auto 1rem;max-width:14em}
+.contact p{max-width:34em;margin:0 auto 1.6rem;color:color-mix(in srgb,var(--bg) 70%,transparent)}
+.contact .btn{background:var(--bg);color:var(--ink);border-color:var(--bg)}
+.contact .btn.ghost{background:transparent;color:var(--bg);border-color:color-mix(in srgb,var(--bg) 40%,transparent)}
+.socials{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.4rem}
+footer{padding:28px 0 56px;color:var(--muted);font-size:.85rem}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
+
+
+/* ---------- motion extras ---------- */
+@property --o{syntax:'<number>';inherits:true;initial-value:0}
+.u{position:relative;display:inline-block}
+.u svg{position:absolute;left:0;bottom:-.06em;width:100%;height:.3em;overflow:visible}
+.u path{fill:none;stroke:var(--accent);stroke-width:5;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1.1s cubic-bezier(.6,.1,.2,1) 1.1s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;margin-top:clamp(8px,2vw,24px);-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.mtrack{display:flex;width:max-content;animation:marq 48s linear infinite}
+.marquee:hover .mtrack{animation-play-state:paused}
+.mtrack span{padding:0 1.3rem;font-family:var(--serif);font-size:clamp(1.25rem,2.4vw,1.7rem);color:var(--muted);white-space:nowrap}
+.mtrack span::after{content:"\2726";color:var(--accent);margin-left:2.6rem;font-size:.7em;vertical-align:.12em}
+@keyframes marq{to{transform:translateX(-50%)}}
+.viz{display:grid;grid-template-columns:minmax(250px,310px) 1fr;gap:clamp(20px,4vw,44px);align-items:center;margin:0 0 1.6rem 4.2rem}
+.viz .chart{margin:0;max-width:none}
+.scan{border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:14px 16px 12px}
+.scan-head{display:flex;justify-content:space-between;align-items:center;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.scan-tag{font-size:.66rem;padding:.15rem .55rem;border-radius:99px;border:1px solid var(--line);letter-spacing:.08em}
+.scan-list{position:relative;padding:2px 0}
+.ln{height:26px;display:flex;align-items:center;gap:10px;padding:0 8px;border-radius:7px}
+.ln .sk{display:block;height:8px;border-radius:4px;background:var(--line);flex:none}
+.ln .flag{margin-left:auto;font-size:.66rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);opacity:var(--o)}
+.ln.hit .sk{background:var(--accent);opacity:calc(.25 + var(--o)*.75)}
+.scan-bar{position:absolute;left:-6px;right:-6px;top:0;height:2px;border-radius:2px;background:var(--accent);box-shadow:0 0 14px 3px var(--accent);opacity:0}
+.scan-foot{margin-top:8px;font-size:.78rem;color:var(--muted)}
+.scan-foot b{color:var(--accent)}
+.case.open .scan-bar{animation:sweep 4.5s linear infinite}
+.case.open .ln.h1{animation:hl1 4.5s linear infinite}
+.case.open .ln.h2{animation:hl2 4.5s linear infinite}
+.case.open .ln.h3{animation:hl3 4.5s linear infinite}
+@keyframes sweep{0%,5%{top:0;opacity:0}6%{top:0;opacity:1}85%{top:calc(100% - 2px);opacity:1}88%,100%{top:calc(100% - 2px);opacity:0}}
+@keyframes hl1{0%,24%{background:transparent;--o:0}27.2%,92%{background:var(--accent-soft);--o:1}96%,100%{background:transparent;--o:0}}
+@keyframes hl2{0%,42%{background:transparent;--o:0}45%,92%{background:var(--accent-soft);--o:1}96%,100%{background:transparent;--o:0}}
+@keyframes hl3{0%,68.5%{background:transparent;--o:0}71.7%,92%{background:var(--accent-soft);--o:1}96%,100%{background:transparent;--o:0}}
+@media (max-width:860px){.viz{grid-template-columns:1fr;margin-left:0}}
+@media (prefers-reduced-motion:reduce){
+  .u path{animation:none;stroke-dashoffset:0}
+  .mtrack{animation:none}
+  .scan-bar{display:none}
+  .case.open .ln.h1,.case.open .ln.h2,.case.open .ln.h3{animation:none}
+  .ln.hit{background:var(--accent-soft);--o:1}
+}
+
+@media (max-width:860px){
+  .links{display:none}
+  .proof{grid-template-columns:repeat(2,1fr)}
+  .proof>div:nth-child(3){border-left:0;padding-left:0}
+  .proof>div:nth-child(n+3){margin-top:1.4rem;border-top:1px solid var(--line)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .about{grid-template-columns:1fr}
+  .cols{grid-template-columns:1fr;padding-left:0}
+  .chart,.tags{margin-left:0}
+}
+@media (max-width:560px){
+  .grid2{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .case-head{grid-template-columns:2.2rem 1fr auto;gap:.6rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  .fill,.body,.faq .a,.plus{transition-duration:.01ms!important}
+  .dot{animation:none}
+}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><img class="avatar" src="sandeep.jpg" alt="" width="34" height="34" onerror="this.remove()">Sandeep Tomar</a>
+    <nav class="links" aria-label="Sections">
+      <a href="#work" data-s="work">Work</a>
+      <a href="#process" data-s="process">Process</a>
+      <a href="#about" data-s="about">About</a>
+      <a href="#faq" data-s="faq">FAQ</a>
+      <a href="./">The journey</a>
+    </nav>
+    <div class="nav-r">
+      <button class="icon-btn" id="theme" aria-label="Toggle light and dark mode"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button>
+      <a class="btn sm" href="#contact">Let&rsquo;s talk</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<div class="wrap">
+  <div class="hero">
+    <span class="status rv"><span class="dot"></span>Open to work &middot; Product Manager &middot; Learning Product &middot; Customer Education &middot; Content Lead</span>
+    <h1 class="rv d1">I turn customer conversations into <em class="u">products.<svg viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><path d="M4 12 C 60 4, 120 16, 180 8 S 270 6, 296 10"/></svg></em></h1>
+    <p class="lede rv d2">&#128075; I&rsquo;m Sandeep. For four years I owned a 57-course Salesforce training portfolio at K2U, from demand research to LMS publishing to release-driven updates. Before that I founded an online party marketplace that did &#8377;6 lakh in bookings in its first two months. Based in Dehradun, India, open to remote and Gurgaon/NCR roles.</p>
+    <div class="cta rv d3">
+      <a class="btn" href="#work">See the work &darr;</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+      <a class="btn ghost" href="Sandeep_Tomar_Resume.pdf" download>Download resume</a>
+    </div>
+    <div class="proof rv d4">
+      <div><div class="big"><span class="num" data-to="6" data-pre="&#8377;" data-suf=" lakh">0</span></div><div class="cap">in marketplace bookings in the first 2 months, about 85 orders</div></div>
+      <div><div class="big"><span class="num" data-to="57">0</span></div><div class="cap">courses in the portfolio I owned, about 45 launched by me</div></div>
+      <div><div class="big"><span class="num" data-to="55" data-pre="~" data-suf="%">0</span></div><div class="cap">faster course update cycles: 80&ndash;90 days down to 30&ndash;45</div></div>
+      <div><div class="big"><span class="num" data-to="24" data-suf="%">0</span></div><div class="cap">lift in course completion, helped by a learner dashboard</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="marquee" aria-label="Skills and tools"><div class="mtrack"><span>Customer interviews</span><span>Roadmap prioritisation</span><span>Pricing and competitive analysis</span><span>Unit economics (CAC and LTV)</span><span>Referral and growth features</span><span>Marketplace products</span><span>Course lifecycle</span><span>LearnDash</span><span>Vendor and SME management</span><span>Jira</span><span>AI-assisted workflows</span><span>Salesforce UAT testing</span><span aria-hidden="true"></span><span aria-hidden="true">Customer interviews</span><span aria-hidden="true">Roadmap prioritisation</span><span aria-hidden="true">Pricing and competitive analysis</span><span aria-hidden="true">Unit economics (CAC and LTV)</span><span aria-hidden="true">Referral and growth features</span><span aria-hidden="true">Marketplace products</span><span aria-hidden="true">Course lifecycle</span><span aria-hidden="true">LearnDash</span><span aria-hidden="true">Vendor and SME management</span><span aria-hidden="true">Jira</span><span aria-hidden="true">AI-assisted workflows</span><span aria-hidden="true">Salesforce UAT testing</span></div></div>
+<section id="work">
+<div class="wrap">
+  <div class="eyebrow rv">Selected work</div>
+  <h2 class="rv">What this looks like in practice.</h2>
+  <p class="sub rv">Five pieces of work, each framed by the result. Tap one to open it.</p>
+
+  <div class="case open rv">
+    <button class="case-head" aria-expanded="true"><span class="n">01</span><span><span class="t">Built a party marketplace to &#8377;6 lakh in bookings in two months, at &#8377;600 per customer</span><span class="m">Phatse (formerly Celebratious) &middot; Founder &amp; CEO &middot; Dec 2019 &ndash; Jan 2023</span></span><span class="plus" aria-hidden="true"></span></button>
+    <div class="body"><div>
+      <div class="tags"><span class="tag">0 to 1</span><span class="tag">Two-sided marketplace</span><span class="tag">20% commission</span><span class="tag">Team of 18</span><span class="tag">Top 25 startups in India, 2021</span></div>
+      <div class="cols">
+        <div><h4>The challenge</h4><p>People planning a party had no single place to find and book nearby organisers for food, cakes, decorations and flowers. Phatse was the marketplace for that, earning a 20% commission on each booking.</p></div>
+        <div><h4>What I did</h4><ul><li>Led a team of 18: 8 engineers, 5 sales and marketing, 5 interns</li><li>Interviewed <b>100+</b> customers and event organisers, then turned the insights into roadmap priorities</li><li>Designed a feature that rewards customers instantly for a successful referral, which kept acquisition cost near <b>&#8377;600</b> a customer</li><li>Ran Google Ads for acquisition</li></ul></div>
+        <div><h4>The result</h4><p><b>&#8377;6 lakh in bookings in the first two months</b>, about 85 orders at a &#8377;7,000 average. Each customer brought in about <b>&#8377;4,800 in commission over two years</b>, eight times what it cost to acquire them. <b>50% month-over-month growth</b>, <b>22% lower churn</b> and <b>30% higher NPS</b>. Named among India&rsquo;s Top 25 startups at the BITS Pilani Entrepreneurship Conclave in 2021.</p></div>
+      </div>
+    </div></div>
+  </div>
+
+  <div class="case rv">
+    <button class="case-head" aria-expanded="false"><span class="n">02</span><span><span class="t">Cut course update cycles from 80&ndash;90 days to 30&ndash;45</span><span class="m">K2U &middot; Idea and specification (built by engineering)</span></span><span class="plus" aria-hidden="true"></span></button>
+    <div class="body"><div>
+      <div class="viz"><div class="scan" aria-hidden="true"><div class="scan-head"><span>Release notes</span><span class="scan-tag">Illustration</span></div><div class="scan-list"><div class="scan-bar"></div><div class="ln"><i class="sk" style="width:78%"></i></div><div class="ln"><i class="sk" style="width:62%"></i></div><div class="ln h1 hit"><i class="sk" style="width:70%"></i><b class="flag">update</b></div><div class="ln"><i class="sk" style="width:54%"></i></div><div class="ln h2 hit"><i class="sk" style="width:66%"></i><b class="flag">update</b></div><div class="ln"><i class="sk" style="width:74%"></i></div><div class="ln"><i class="sk" style="width:48%"></i></div><div class="ln h3 hit"><i class="sk" style="width:60%"></i><b class="flag">update</b></div><div class="ln"><i class="sk" style="width:68%"></i></div></div><div class="scan-foot"><b>3</b> of 9 lines need a course update</div></div><div class="chart">
+        <div class="bar"><div class="lbl">Before &middot; 8&ndash;9 steps, team of 5</div><div class="track"><div class="fill b" style="--w:100%">80&ndash;90 days</div></div></div>
+        <div class="bar"><div class="lbl">After &middot; team of 3</div><div class="track"><div class="fill a" style="--w:44%">30&ndash;45 days</div></div></div>
+      </div></div>
+      <div class="cols">
+        <div><h4>The problem</h4><p>Every Salesforce release meant combing through thousands of lines of release notes by hand to find what each course needed.</p></div>
+        <div><h4>What I did</h4><p>Conceptualised a workflow where release notes go into an AI system that flags the exact content to update. My engineering team built it.</p></div>
+        <div><h4>The result</h4><p>Update cycles dropped to <b>30&ndash;45 days</b> with a team of three instead of five: about <b>55% faster</b>, using the midpoint of each range. Calendar days, weekends off.</p></div>
+      </div>
+    </div></div>
+  </div>
+
+  <div class="case rv">
+    <button class="case-head" aria-expanded="false"><span class="n">03</span><span><span class="t">Helped lift course completion by 24% with a learner dashboard</span><span class="m">K2U &middot; Completion and retention</span></span><span class="plus" aria-hidden="true"></span></button>
+    <div class="body"><div>
+      <div class="cols" style="grid-template-columns:1fr 1fr">
+        <div><h4>What I did</h4><p>Specified a learner progress dashboard, built by engineering, to give the team a clear view of how learners moved through courses, and spoke with learners after purchase to understand their motivations and pain points.</p></div>
+        <div><h4>The result</h4><p>The dashboard <b>helped lift overall course completion by 24%</b> and supported retention.</p></div>
+      </div>
+    </div></div>
+  </div>
+
+  <div class="case rv">
+    <button class="case-head" aria-expanded="false"><span class="n">04</span><span><span class="t">Ran a 57-course catalogue through a rebrand and kept it current</span><span class="m">K2U (formerly Focus on Force) &middot; Sep 2022 &ndash; Oct 2026</span></span><span class="plus" aria-hidden="true"></span></button>
+    <div class="body"><div>
+      <div class="tags"><span class="tag">Course lifecycle</span><span class="tag">LearnDash</span><span class="tag">Jira</span><span class="tag">SME management</span></div>
+      <div class="cols">
+        <div><h4>The challenge</h4><p>A 57-course Salesforce training library had to move from Focus on Force to K2U while staying accurate through every Salesforce release.</p></div>
+        <div><h4>What I owned</h4><ul><li>Led the <b>content transition</b> across the catalogue</li><li>Demand research and target-customer definition for each new course</li><li>Build-in-house versus external SME decisions</li><li>Planning in Jira (kanban, agile or waterfall) within budgets</li><li>Launch marketing briefs</li></ul></div>
+        <div><h4>The result</h4><p><b>57 courses</b> carried through the transition, with about <b>45 launched by me</b> and published on LearnDash. I also managed external SMEs and partners (including invoice approvals) and joined discovery calls with corporate clients to tailor instructor-led team training.</p></div>
+      </div>
+    </div></div>
+  </div>
+
+  <div class="case rv">
+    <button class="case-head" aria-expanded="false"><span class="n">05</span><span><span class="t">Took a YouTube channel from zero to 5,000+ subscribers in five months</span><span class="m">Dark Brew &middot; Creative Director and Producer &middot; part-time</span></span><span class="plus" aria-hidden="true"></span></button>
+    <div class="body"><div>
+      <div class="cols">
+        <div><h4>What I did</h4><ul><li>Wrote the scripts</li><li>Chose the topics</li><li>Designed the thumbnails</li><li>Gave the editor visual cues for each video</li></ul></div>
+        <div><h4>The result</h4><p><b>5,000+ subscribers</b> and <b>320,000+ views</b> in five months, working part-time. The channel reached monetisation within <b>two months</b>.</p></div>
+        <div><h4>Why it matters here</h4><p>Content that holds attention is the same discipline as a lesson that holds a learner.</p></div>
+      </div>
+    </div></div>
+  </div>
+</div>
+</section>
+
+<section id="process">
+<div class="wrap">
+  <div class="eyebrow rv">Process</div>
+  <h2 class="rv">How I run a course, end to end.</h2>
+  <p class="sub rv">The same four steps carried me through all 57 courses.</p>
+  <div class="steps">
+    <div class="step rv"><h3>Research the demand</h3><p>Find the next course worth building, define who it is for, and check the competition and pricing.</p></div>
+    <div class="step rv d1"><h3>Plan and staff it</h3><p>Decide whether to build in-house or with an external SME, then plan and budget it in Jira.</p></div>
+    <div class="step rv d2"><h3>Launch it</h3><p>Publish on the LMS and write a marketing brief so the launch lands with the right audience.</p></div>
+    <div class="step rv d3"><h3>Keep it current</h3><p>Track every release and update what changed, with AI-assisted flagging to make that fast.</p></div>
+  </div>
+
+  <div style="height:56px"></div>
+  <div class="eyebrow rv">Principles</div>
+  <h2 class="rv">What I care about.</h2>
+  <div class="grid2" style="margin-top:1.6rem">
+    <div class="pcard rv"><h3>Accuracy after launch day</h3><p>A course is only as good as its latest update. Maintenance deserves a process, not an afterthought.</p></div>
+    <div class="pcard rv d1"><h3>Less manual glue work</h3><p>If people are re-reading thousands of lines to find a handful of changes, there is a better way to do it.</p></div>
+    <div class="pcard rv d2"><h3>Listen after the sale</h3><p>Learners tell you what they actually came for, and where they got stuck. I ask.</p></div>
+    <div class="pcard rv d3"><h3>Plan inside the budget</h3><p>Clear scope, honest estimates, and partners who get paid on time and know what is expected.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap about">
+  <div>
+    <img class="portrait rv" src="sandeep.jpg" alt="Portrait of Sandeep Tomar" width="140" height="140" loading="lazy" onerror="this.remove()">
+    <div class="eyebrow rv">About</div>
+    <h2 class="rv">Product and learning, with a founder&rsquo;s eye.</h2>
+    <p class="rv">I started in hospitality, leading a 60-person dining team on P&amp;O Cruises with an NPS above 80 on 85%+ of cruises. I moved into product at SearchFinn, founded Phatse, and then spent four years at K2 Partnering Solutions, under the K2U brand, running a Salesforce training library.</p>
+    <p class="rv">My title there was Product Manager; the work was content and learning leadership: what to build, who builds it, how it launches, and how it stays right.</p>
+    <div class="chips rv">
+      <span class="chip">Customer interviews</span><span class="chip">Roadmap prioritisation</span><span class="chip">Pricing and competitive analysis</span><span class="chip">Unit economics (CAC, LTV)</span><span class="chip">Referral and growth features</span><span class="chip">Marketplace products</span><span class="chip">Course development</span><span class="chip">LMS publishing</span><span class="chip">Vendor and SME management</span><span class="chip">SOPs and onboarding</span><span class="chip">Salesforce UAT testing</span><span class="chip">Jira &middot; Asana &middot; Trello</span><span class="chip">LearnDash</span><span class="chip">HTML &middot; CSS &middot; React</span>
+    </div>
+  </div>
+  <div class="list">
+    <div class="rv"><h3>Now</h3>
+      <ul>
+        <li>Open to product manager, learning product, customer education and content lead roles<span>EdTech and SaaS, remote or Gurgaon/NCR</span></li>
+        <li>Creative Director and Producer, Dark Brew<span>YouTube channel, part-time</span></li>
+      </ul></div>
+    <div class="rv d1"><h3>Previously</h3>
+      <ul>
+        <li>K2 Partnering Solutions<span>Product Manager, Content and Learning Lead &middot; K2U, formerly Focus on Force &middot; 2022&ndash;2026</span></li>
+        <li>Phatse (Celebratious)<span>Founder &amp; CEO &middot; 2019&ndash;2023</span></li>
+        <li>SearchFinn<span>Product Manager &middot; 2017&ndash;2019</span></li>
+        <li>Carnival UK (P&amp;O Cruises)<span>F&amp;B Supervisor &middot; 2010&ndash;2017</span></li>
+      </ul></div>
+    <div class="rv d2"><h3>Credentials</h3>
+      <ul>
+        <li>Google Project Management Certificate<span>2021</span></li>
+        <li>Agile with Atlassian Jira<span>Atlassian &middot; 2021</span></li>
+        <li>Growth Strategies, Financing and Profitability<span>Wharton Online &middot; 2021</span></li>
+        <li>Full-Stack Web Development<span>Developer bootcamp &middot; 2022</span></li>
+        <li>B.Sc. Hotel Management<span>Sikkim Manipal University</span></li>
+      </ul></div>
+  </div>
+</div>
+</section>
+
+<section id="faq">
+<div class="wrap">
+  <div class="eyebrow rv">FAQ</div>
+  <h2 class="rv">A few questions people ask.</h2>
+  <div style="height:1.2rem"></div>
+  <div class="faq open rv"><button aria-expanded="true">What roles are you looking for?<span class="plus"></span></button><div class="a"><div><p>Product manager, learning product, customer education and content lead roles in EdTech and SaaS. I&rsquo;m based in Dehradun, India, and open to remote work or roles in Gurgaon/NCR.</p></div></div></div>
+  <div class="faq rv"><button aria-expanded="false">Which learning platforms have you used?<span class="plus"></span></button><div class="a"><div><p>LearnDash, hands-on, at both Focus on Force and K2U: I uploaded, configured and published courses myself. I pick up new platforms quickly.</p></div></div></div>
+  <div class="faq rv"><button aria-expanded="false">Did you build the AI workflow yourself?<span class="plus"></span></button><div class="a"><div><p>I conceptualised it and specified what it needed to do. Our engineering team built it. I&rsquo;m happy to walk through the idea in an interview.</p></div></div></div>
+  <div class="faq rv"><button aria-expanded="false">Can I see the work behind these numbers?<span class="plus"></span></button><div class="a"><div><p>I&rsquo;m glad to talk through any case study on a call. Some material belongs to past employers, so I can&rsquo;t share internal documents.</p></div></div></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="wrap">
+  <div class="contact rv">
+    <div class="eyebrow" style="color:inherit;opacity:.7">Let&rsquo;s talk</div>
+    <h2>If this sounds right, let&rsquo;s talk.</h2>
+    <p>A short conversation is usually enough to see whether there&rsquo;s a fit. I read every message myself.</p>
+    <div class="cta" style="justify-content:center">
+      <a class="btn" href="mailto:tomarsandeep38@gmail.com?subject=Hello%20Sandeep">Email me</a>
+      <button class="btn ghost" id="copy">Copy email</button>
+      <a class="btn ghost" href="Sandeep_Tomar_Resume.pdf" download>Download resume</a>
+    </div>
+    <div class="socials">
+      <a class="btn ghost sm" href="https://www.linkedin.com/in/sandeep-tomar-81690125/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost sm" href="https://github.com/SandeepTomar16" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn ghost sm" href="https://x.com/TomarSandeep16" target="_blank" rel="noopener">X</a>
+      <a class="btn ghost sm" href="https://www.instagram.com/sandeep16tomar/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>&copy; 2026 Sandeep Tomar</span><span>Dehradun, India &middot; Open to remote and Gurgaon/NCR roles</span></div></footer>
+
+<script>
+(function(){
+  "use strict";
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var root=document.documentElement;
+
+  /* theme toggle */
+  var tbtn=document.getElementById('theme');
+  tbtn.addEventListener('click',function(){
+    var dark=window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var cur=root.getAttribute('data-theme')||(dark?'dark':'light');
+    root.setAttribute('data-theme',cur==='dark'?'light':'dark');
+  });
+
+  /* reveal on scroll */
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+  Array.prototype.forEach.call(document.querySelectorAll('.rv'),function(el){ io.observe(el); });
+
+  /* counters */
+  function fmt(n){ return n>=1000? n.toLocaleString('en-IN') : String(n); }
+  function count(el){
+    var to=+el.getAttribute('data-to'), pre=el.getAttribute('data-pre')||'', suf=el.getAttribute('data-suf')||'';
+    if(reduce){ el.textContent=pre+fmt(to)+suf; return; }
+    var t0=null,dur=1400;
+    function step(t){
+      if(t0===null) t0=t;
+      var k=Math.min(1,(t-t0)/dur), e=1-Math.pow(1-k,3);
+      el.textContent=pre+fmt(Math.round(to*e))+(k>=1?suf:'');
+      if(k<1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var cio=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ count(e.target); cio.unobserve(e.target); } });
+  },{threshold:.6});
+  Array.prototype.forEach.call(document.querySelectorAll('.num'),function(el){ cio.observe(el); });
+
+  /* accordions (cases + faq) */
+  function wire(selector,btnSel){
+    Array.prototype.forEach.call(document.querySelectorAll(selector),function(item){
+      var b=item.querySelector(btnSel);
+      b.addEventListener('click',function(){
+        var open=item.classList.toggle('open');
+        b.setAttribute('aria-expanded',open?'true':'false');
+      });
+    });
+  }
+  wire('.case','.case-head');
+  wire('.faq','button');
+
+  /* nav: progress, shadow, active link */
+  var nav=document.getElementById('nav'), prog=document.getElementById('progress');
+  function onScroll(){
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    prog.style.width=(h>0?Math.min(100,window.scrollY/h*100):0)+'%';
+    nav.classList.toggle('scrolled',window.scrollY>8);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  var links={};
+  Array.prototype.forEach.call(document.querySelectorAll('.links a'),function(a){ links[a.getAttribute('data-s')]=a; });
+  var sio=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        Object.keys(links).forEach(function(k){ links[k].classList.toggle('active',k===e.target.id); });
+      }
+    });
+  },{rootMargin:'-45% 0px -50% 0px'});
+  ['work','process','about','faq'].forEach(function(id){ var s=document.getElementById(id); if(s) sio.observe(s); });
+
+  /* copy email */
+  var cb=document.getElementById('copy');
+  cb.addEventListener('click',function(){
+    var txt='tomarsandeep38@gmail.com';
+    function done(){ cb.textContent='Copied \u2713'; setTimeout(function(){ cb.textContent='Copy email'; },1800); }
+    try{
+      if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(done,function(){ cb.textContent=txt; }); }
+      else{ cb.textContent=txt; }
+    }catch(e){ cb.textContent=txt; }
+  });
+})();
+</script>
+</body>
+</html>
