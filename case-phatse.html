@@ -1,0 +1,77 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Phatse: a party marketplace | Sandeep Tomar</title><meta name="description" content="I founded and led an online marketplace where customers booked food, cakes, decorations and flowers from nearby organisers."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet"><style>
+:root{--bg:#faf8f4;--fg:#1c1b19;--muted:#5d5a52;--line:#ddd8cc;--card:#fff;--accent:#0f766e;--accent2:#e9f4f1}
+@media (prefers-color-scheme:dark){:root{--bg:#141412;--fg:#f0eee8;--muted:#a6a396;--line:#2d2c28;--card:#1c1b19;--accent:#4fd1c0;--accent2:#17302d}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 'Source Serif 4',Georgia,serif}
+h1,h2,h3,.nav,.tag,.btn,.k{font-family:'Inter',Arial,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;gap:12px;flex-wrap:wrap}
+.nav b{font-size:17px;letter-spacing:-.2px}
+.nav div{display:flex;flex-wrap:wrap;gap:2px 18px}.nav div a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+.nav div a:hover,.nav div a.on{color:var(--accent)}
+.hero{padding:64px 0 36px}
+.hero h1{font-size:clamp(34px,6vw,52px);line-height:1.1;letter-spacing:-1.2px;margin:0 0 16px;text-wrap:balance}
+.hero p{font-size:19px;color:var(--muted);max-width:640px}
+.tag{display:inline-block;font-size:12px;font-weight:600;color:var(--accent);background:var(--accent2);padding:4px 10px;border-radius:99px;margin:0 6px 8px 0}
+.btn{display:inline-block;background:var(--accent);color:var(--bg);padding:11px 20px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px;margin:6px 10px 6px 0}
+.btn.alt{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+h2{font-size:26px;letter-spacing:-.4px;margin:0 0 14px;text-wrap:balance}
+h3{font-size:18px;margin:0 0 4px}
+section{padding:34px 0;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;text-decoration:none;color:inherit;display:block}
+a.card:hover{border-color:var(--accent)}
+.card p{margin:6px 0 0;color:var(--muted);font-size:15px;line-height:1.5}
+.num{font-family:'Inter',sans-serif;font-size:34px;font-weight:700;letter-spacing:-1px;color:var(--accent);line-height:1}
+.k{font-size:12px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);font-weight:600}
+.job{margin:0 0 22px}.job .d{color:var(--muted);font-size:14px;font-family:'Inter',sans-serif}
+ul{padding-left:20px}li{margin:5px 0}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin:26px 0 8px;padding:18px;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.meta div span{display:block;font-family:'Inter',sans-serif;font-size:15px;font-weight:600}
+.toc{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 6px}
+.toc a{font-family:'Inter',sans-serif;font-size:13px;font-weight:500;padding:6px 12px;border:1px solid var(--line);border-radius:99px;color:var(--muted);text-decoration:none}
+.toc a:hover{color:var(--accent);border-color:var(--accent)}
+.next{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:10px}
+footer{border-top:1px solid var(--line);padding:26px 0 44px;color:var(--muted);font:14px 'Inter',sans-serif}
+.flow{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch;margin:14px 0}
+.flow div{flex:1 1 150px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font:14px/1.4 'Inter',sans-serif}
+.flow div b{display:block;color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.6px;margin-bottom:4px}
+
+.desk{position:relative;height:460px;border:1px solid var(--line);border-radius:16px;background-color:var(--card);background-image:radial-gradient(var(--line) 1px,transparent 1px);background-size:22px 22px;overflow:hidden;margin:6px 0 34px}
+.desk .hint{position:absolute;right:14px;bottom:10px;font:12px 'Inter',sans-serif;color:var(--muted);pointer-events:none}
+.note{position:absolute;width:158px;padding:14px 14px 16px;font:600 14px/1.35 'Inter',sans-serif;color:#2a2618;border-radius:3px;box-shadow:0 8px 14px -6px rgba(0,0,0,.35),0 1px 0 rgba(255,255,255,.4) inset;cursor:grab;user-select:none;touch-action:none;transition:box-shadow .15s,transform .15s}
+.note:active{cursor:grabbing;box-shadow:0 18px 24px -8px rgba(0,0,0,.45)}
+.note small{display:block;font-weight:500;font-size:12px;opacity:.75;margin-top:6px}
+.note .big{display:block;font-size:30px;letter-spacing:-1px;line-height:1.05}
+.y{background:#fde68a}.g{background:#bbf7d0}.p{background:#fbcfe8}.b{background:#bae6fd}.o{background:#fed7aa}
+@media (max-width:560px){.desk{height:auto;display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:14px 14px 40px}.note{position:static!important;width:auto;transform:none!important;touch-action:auto;cursor:pointer;font-size:13px}.note .big{font-size:24px}.desk .hint .dk{display:none}}
+.callout{border-left:3px solid var(--accent);padding:8px 18px;background:var(--accent2);border-radius:0 10px 10px 0;margin:18px 0}.callout b{font-family:'Inter',sans-serif}.chips{margin:8px 0 0}h3.s{font-size:17px;margin:20px 0 6px}
+.tbl{overflow-x:auto;margin:14px 0}.tbl table{border-collapse:collapse;width:100%;min-width:620px;font:14px/1.45 'Inter',sans-serif}.tbl th{text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);border-bottom:2px solid var(--line);padding:8px 10px}.tbl td{border-bottom:1px solid var(--line);padding:10px;vertical-align:top}.tbl td:first-child{font-weight:600}.tbl td:last-child{color:var(--accent);font-weight:600}
+.flip{perspective:1000px;background:none;border:0;padding:0;text-align:left;cursor:pointer;min-height:170px;font:inherit;color:inherit}
+.flip .in{position:relative;width:100%;height:100%;min-height:170px;transition:transform .5s;transform-style:preserve-3d}
+.flip.on .in{transform:rotateY(180deg)}
+.flip .fc,.flip .bc{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:12px;padding:20px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}
+.flip .fc{background:var(--card)}.flip .fc h3{font-size:19px}.flip .fc small{font:600 12px 'Inter',sans-serif;color:var(--accent)}
+.flip .bc{background:var(--accent);color:var(--bg);transform:rotateY(180deg);font:15px/1.5 'Inter',sans-serif}
+.tl{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 16px}
+.tl button{font:600 14px 'Inter',sans-serif;padding:9px 14px;border-radius:99px;border:1.5px solid var(--line);background:var(--card);color:var(--muted);cursor:pointer}
+.tl button[aria-selected=true]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.tlp{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.note[data-href]::after{content:'Open →';display:block;font-size:11px;margin-top:8px;opacity:.7}
+@media (prefers-reduced-motion:reduce){.flip .in{transition:none}}
+</style></head><body>
+<header><div class="wrap nav"><b>Sandeep Tomar</b><div><a href="index.html">Home</a><a href="product.html">What I do</a><a href="projects.html">Work</a><a href="operations.html">Operations</a><a href="about.html">About</a><a href="assets/Sandeep_Tomar_Product_Manager_Resume.pdf">Resume</a><a href="index.html#contact">Contact</a></div></div></header>
+<div class="wrap"><div class="hero" style="padding-bottom:10px"><span class="tag">Case study</span><h1>Phatse: a party marketplace</h1><p>I founded and led an online marketplace where customers booked food, cakes, decorations and flowers from nearby organisers.</p></div><div class="meta"><div class="k">Result<span style="text-transform:none;letter-spacing:0;color:var(--fg)">600K rupees in 2 months</span></div><div class="k">My role<span style="text-transform:none;letter-spacing:0;color:var(--fg)">Founder and CEO</span></div><div class="k">Team I led<span style="text-transform:none;letter-spacing:0;color:var(--fg)">18: 8 engineers, 5 sales and marketing, 5 interns</span></div><div class="k">Period<span style="text-transform:none;letter-spacing:0;color:var(--fg)">Dec 2019 to Jan 2023</span></div></div><nav class="toc"><a href="#problem">The problem</a><a href="#discovery">Discovery</a><a href="#solution">Solution</a><a href="#team">Running the team</a><a href="#growth">Growth and retention</a><a href="#results">Results</a><a href="#learned">What I took from it</a></nav><section id="problem"><h2>The problem</h2><p>Planning a party meant calling many vendors, comparing prices and chasing availability.</p><ul><li><b>Photographers:</b> high prices, no easy way to book, and rates that changed with the season.</li><li><b>Food:</b> delivery-app party deals were costly, and there was no way to schedule ahead.</li><li><b>Cakes:</b> few app options, nothing over 2 kg, and basic flavours online.</li><li><b>Decorations:</b> few offline stores nearby, incomplete stock, and local decorators were hard to find.</li><li><b>Freelancers:</b> no good platform to sell their services.</li></ul></section><section id="discovery"><h2>Discovery</h2><p>I interviewed more than 100 customers and event organisers, and more than 30 party vendors. I also attended over 20 parties as an observer to see what actually went wrong on the day. I wrote user personas, PRDs and user stories from this, and used the findings to set the roadmap. Over time, NPS rose by 30%.</p></section><section id="solution"><h2>Solution</h2><p>A simple booking flow where customers chose the occasion, browsed nearby services by category, and scheduled a date and time. Organisers earned from each booking, and Phatse took a 20% commission.</p><div class="flow"><div><b>1</b>Choose the occasion</div><div><b>2</b>Browse nearby services</div><div><b>3</b>Schedule date and time</div></div><p>I mapped the customer journey and the flow chart first, then wireframes and prototypes, then worked with the engineers through the build. I used Mixpanel to see where customers dropped off and ran A/B tests on features and campaigns, keeping whatever performed better.</p></section><section id="team"><h2>Running the team</h2><p>I built and led a team of 18: 8 engineers, 5 in sales and marketing and 5 interns. I set the vision and roadmap, owned product and growth, ran acquisition, and kept engineering, sales and marketing working to one plan.</p></section><section id="growth"><h2>Growth and retention</h2><h3 class="s">Referral reward</h3><p>I designed an instant reward for referrals. Acquiring a referred customer cost about 600 rupees, while that customer brought in about 4,800 rupees in commission over 2 years. That is roughly 8 to 1. The reward drove 50% month-over-month growth.</p><h3 class="s">Email campaigns</h3><p>I set up welcome, re-engagement and referral-reminder emails, and ran campaigns in Mailchimp and Sendinblue (now Brevo). Churn fell by 22%, measured over six months: one month before the journeys went live and five months after.</p></section><section id="results"><h2>Results</h2><div class="grid"><div class="card"><div class="num">600K</div><p>rupees in bookings in the first 2 months, about 85 orders at 7,000 rupees each</p></div><div class="card"><div class="num">22%</div><p>churn reduction after email journeys</p></div><div class="card"><div class="num">+30%</div><p>NPS</p></div></div><p style="margin-top:16px">Phatse was named one of India&rsquo;s Top 25 startups at the BITS Pilani Entrepreneurship Conclave 2021.</p></section><section id="learned"><h2>What I took from it</h2><p>I learned how to read a marketplace from both sides, because customers and organisers need different things from the same booking. I also learned to treat a referral reward like any other cost: work out what a customer is worth first, then decide what you can afford to pay to get one.</p><p>Next time I would set up cohort tracking and a holdout group from day one, so every campaign&rsquo;s effect is measured from the start.</p></section><section><div class=k style=margin-bottom:8px>Skills and tools used</div><div class=chips><span class=tag>Customer interviews</span><span class=tag>PRDs and user stories</span><span class=tag>Mixpanel</span><span class=tag>A/B testing</span><span class=tag>Referral and unit economics</span><span class=tag>Mailchimp</span><span class=tag>Sendinblue</span><span class=tag>Google Ads</span><span class=tag>Team leadership</span></div><div class="next"><a class="btn alt" href="projects.html">All projects</a><a class="btn" href="case-automation.html">Next: Release notes and revenue-sharing automation</a></div></section></div>
+<script>
+(function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var nums=[].slice.call(document.querySelectorAll('.num'));
+function run(el){var m=el.textContent.match(/^(\D*)(\d+)(.*)$/);if(!m||rm)return;var end=+m[2],t0=null,d=900;
+ function f(t){if(!t0)t0=t;var p=Math.min(1,(t-t0)/d);el.textContent=m[1]+Math.round(end*(1-Math.pow(1-p,3)))+m[3];if(p<1)requestAnimationFrame(f);}requestAnimationFrame(f);}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){run(e.target);io.unobserve(e.target);}})},{threshold:.6});nums.forEach(function(n){io.observe(n)});}
+[].forEach.call(document.querySelectorAll('.flip'),function(b){b.addEventListener('click',function(){b.classList.toggle('on');b.setAttribute('aria-pressed',b.classList.contains('on'))})});
+[].forEach.call(document.querySelectorAll('.tl'),function(t){var bs=[].slice.call(t.querySelectorAll('button'));bs.forEach(function(b){b.addEventListener('click',function(){bs.forEach(function(x){var on=x===b;x.setAttribute('aria-selected',on);document.getElementById(x.getAttribute('aria-controls')).hidden=!on;})})})});
+})();
+</script>
+<footer><div class="wrap">&copy; 2026 Sandeep Tomar &middot; Gurugram, India &middot; <a href="https://www.linkedin.com/in/sandeep-tomar-81690125">LinkedIn</a> &middot; <a href="https://github.com/SandeepTomar16">GitHub</a></div></footer></body></html>

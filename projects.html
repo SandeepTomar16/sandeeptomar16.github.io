@@ -1,0 +1,83 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Case studies | Sandeep Tomar</title><meta name="description" content="Case studies by Sandeep Tomar."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet"><style>
+:root{--bg:#faf8f4;--fg:#1c1b19;--muted:#5d5a52;--line:#ddd8cc;--card:#fff;--accent:#0f766e;--accent2:#e9f4f1}
+@media (prefers-color-scheme:dark){:root{--bg:#141412;--fg:#f0eee8;--muted:#a6a396;--line:#2d2c28;--card:#1c1b19;--accent:#4fd1c0;--accent2:#17302d}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 'Source Serif 4',Georgia,serif}
+h1,h2,h3,.nav,.tag,.btn,.k{font-family:'Inter',Arial,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;gap:12px;flex-wrap:wrap}
+.nav b{font-size:17px;letter-spacing:-.2px}
+.nav div{display:flex;flex-wrap:wrap;gap:2px 18px}.nav div a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+.nav div a:hover,.nav div a.on{color:var(--accent)}
+.hero{padding:64px 0 36px}
+.hero h1{font-size:clamp(34px,6vw,52px);line-height:1.1;letter-spacing:-1.2px;margin:0 0 16px;text-wrap:balance}
+.hero p{font-size:19px;color:var(--muted);max-width:640px}
+.tag{display:inline-block;font-size:12px;font-weight:600;color:var(--accent);background:var(--accent2);padding:4px 10px;border-radius:99px;margin:0 6px 8px 0}
+.btn{display:inline-block;background:var(--accent);color:var(--bg);padding:11px 20px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px;margin:6px 10px 6px 0}
+.btn.alt{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+h2{font-size:26px;letter-spacing:-.4px;margin:0 0 14px;text-wrap:balance}
+h3{font-size:18px;margin:0 0 4px}
+section{padding:34px 0;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;text-decoration:none;color:inherit;display:block}
+a.card:hover{border-color:var(--accent)}
+.card p{margin:6px 0 0;color:var(--muted);font-size:15px;line-height:1.5}
+.num{font-family:'Inter',sans-serif;font-size:34px;font-weight:700;letter-spacing:-1px;color:var(--accent);line-height:1}
+.k{font-size:12px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);font-weight:600}
+.job{margin:0 0 22px}.job .d{color:var(--muted);font-size:14px;font-family:'Inter',sans-serif}
+ul{padding-left:20px}li{margin:5px 0}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin:26px 0 8px;padding:18px;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.meta div span{display:block;font-family:'Inter',sans-serif;font-size:15px;font-weight:600}
+.toc{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 6px}
+.toc a{font-family:'Inter',sans-serif;font-size:13px;font-weight:500;padding:6px 12px;border:1px solid var(--line);border-radius:99px;color:var(--muted);text-decoration:none}
+.toc a:hover{color:var(--accent);border-color:var(--accent)}
+.next{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:10px}
+footer{border-top:1px solid var(--line);padding:26px 0 44px;color:var(--muted);font:14px 'Inter',sans-serif}
+.flow{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch;margin:14px 0}
+.flow div{flex:1 1 150px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font:14px/1.4 'Inter',sans-serif}
+.flow div b{display:block;color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.6px;margin-bottom:4px}
+
+.desk{position:relative;height:460px;border:1px solid var(--line);border-radius:16px;background-color:var(--card);background-image:radial-gradient(var(--line) 1px,transparent 1px);background-size:22px 22px;overflow:hidden;margin:6px 0 34px}
+.desk .hint{position:absolute;right:14px;bottom:10px;font:12px 'Inter',sans-serif;color:var(--muted);pointer-events:none}
+.note{position:absolute;width:158px;padding:14px 14px 16px;font:600 14px/1.35 'Inter',sans-serif;color:#2a2618;border-radius:3px;box-shadow:0 8px 14px -6px rgba(0,0,0,.35),0 1px 0 rgba(255,255,255,.4) inset;cursor:grab;user-select:none;touch-action:none;transition:box-shadow .15s,transform .15s}
+.note:active{cursor:grabbing;box-shadow:0 18px 24px -8px rgba(0,0,0,.45)}
+.note small{display:block;font-weight:500;font-size:12px;opacity:.75;margin-top:6px}
+.note .big{display:block;font-size:30px;letter-spacing:-1px;line-height:1.05}
+.y{background:#fde68a}.g{background:#bbf7d0}.p{background:#fbcfe8}.b{background:#bae6fd}.o{background:#fed7aa}
+@media (max-width:560px){.desk{height:auto;display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:14px 14px 40px}.note{position:static!important;width:auto;transform:none!important;touch-action:auto;cursor:pointer;font-size:13px}.note .big{font-size:24px}.desk .hint .dk{display:none}}
+.callout{border-left:3px solid var(--accent);padding:8px 18px;background:var(--accent2);border-radius:0 10px 10px 0;margin:18px 0}.callout b{font-family:'Inter',sans-serif}.chips{margin:8px 0 0}h3.s{font-size:17px;margin:20px 0 6px}
+.tbl{overflow-x:auto;margin:14px 0}.tbl table{border-collapse:collapse;width:100%;min-width:620px;font:14px/1.45 'Inter',sans-serif}.tbl th{text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);border-bottom:2px solid var(--line);padding:8px 10px}.tbl td{border-bottom:1px solid var(--line);padding:10px;vertical-align:top}.tbl td:first-child{font-weight:600}.tbl td:last-child{color:var(--accent);font-weight:600}
+.flip{perspective:1000px;background:none;border:0;padding:0;text-align:left;cursor:pointer;min-height:170px;font:inherit;color:inherit}
+.flip .in{position:relative;width:100%;height:100%;min-height:170px;transition:transform .5s;transform-style:preserve-3d}
+.flip.on .in{transform:rotateY(180deg)}
+.flip .fc,.flip .bc{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:12px;padding:20px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}
+.flip .fc{background:var(--card)}.flip .fc h3{font-size:19px}.flip .fc small{font:600 12px 'Inter',sans-serif;color:var(--accent)}
+.flip .bc{background:var(--accent);color:var(--bg);transform:rotateY(180deg);font:15px/1.5 'Inter',sans-serif}
+.tl{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 16px}
+.tl button{font:600 14px 'Inter',sans-serif;padding:9px 14px;border-radius:99px;border:1.5px solid var(--line);background:var(--card);color:var(--muted);cursor:pointer}
+.tl button[aria-selected=true]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.tlp{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.note[data-href]::after{content:'Open →';display:block;font-size:11px;margin-top:8px;opacity:.7}
+@media (prefers-reduced-motion:reduce){.flip .in{transition:none}}
+</style></head><body>
+<header><div class="wrap nav"><b>Sandeep Tomar</b><div><a href="index.html">Home</a><a href="product.html">What I do</a><a href="projects.html">Work</a><a href="operations.html">Operations</a><a href="about.html">About</a><a href="assets/Sandeep_Tomar_Product_Manager_Resume.pdf">Resume</a><a href="index.html#contact">Contact</a></div></div></header>
+<div class="wrap"><div class="hero" style="padding-bottom:20px"><h1>Case studies</h1><p>Work I led, the decisions I made, and what changed for the business.</p></div><div class="grid" style="padding-bottom:40px">
+<a class="card" href="case-yourtoken.html"><span class="tag">Shopify apps</span><h3>Order from chaos at a Shopify apps startup</h3><p>3.7% higher AOV from plugin nudges, about 50 new brands in 3 months, and a team that finally had one place to work.</p></a>
+<a class="card" href="case-k2u-dashboard.html"><span class="tag">EdTech</span><h3>Learner progress dashboard</h3><p>Helped lift course completion by 24% at K2U.</p></a>
+<a class="card" href="case-phatse.html"><span class="tag">Marketplace</span><h3>Phatse: party marketplace</h3><p>600K rupees in bookings in 2 months, and a referral reward that paid back 8 to 1.</p></a>
+<a class="card" href="case-automation.html"><span class="tag">Operations</span><h3>Release notes and revenue-sharing automation</h3><p>Course updates in 30-45 days instead of 80-90, and expert reporting down from 1 hour to 15 minutes.</p></a>
+<a class="card" href="operations.html"><span class="tag">Operations</span><h3>How I lead operations</h3><p>My operating model, and the teams I've run it with: K2U, Phatse and Carnival UK.</p></a>
+<a class="card" href="case-boxyt.html"><span class="tag">D2C</span><h3>Boxyt: party in a box</h3><p>A Shopify store built and run end to end, Dec 2021 to Sep 2022.</p></a></div></div>
+<script>
+(function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var nums=[].slice.call(document.querySelectorAll('.num'));
+function run(el){var m=el.textContent.match(/^(\D*)(\d+)(.*)$/);if(!m||rm)return;var end=+m[2],t0=null,d=900;
+ function f(t){if(!t0)t0=t;var p=Math.min(1,(t-t0)/d);el.textContent=m[1]+Math.round(end*(1-Math.pow(1-p,3)))+m[3];if(p<1)requestAnimationFrame(f);}requestAnimationFrame(f);}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){run(e.target);io.unobserve(e.target);}})},{threshold:.6});nums.forEach(function(n){io.observe(n)});}
+[].forEach.call(document.querySelectorAll('.flip'),function(b){b.addEventListener('click',function(){b.classList.toggle('on');b.setAttribute('aria-pressed',b.classList.contains('on'))})});
+[].forEach.call(document.querySelectorAll('.tl'),function(t){var bs=[].slice.call(t.querySelectorAll('button'));bs.forEach(function(b){b.addEventListener('click',function(){bs.forEach(function(x){var on=x===b;x.setAttribute('aria-selected',on);document.getElementById(x.getAttribute('aria-controls')).hidden=!on;})})})});
+})();
+</script>
+<footer><div class="wrap">&copy; 2026 Sandeep Tomar &middot; Gurugram, India &middot; <a href="https://www.linkedin.com/in/sandeep-tomar-81690125">LinkedIn</a> &middot; <a href="https://github.com/SandeepTomar16">GitHub</a></div></footer></body></html>
