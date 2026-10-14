@@ -1,6 +1,6 @@
 /* Retro computer theme: pixel headlines, mono labels, corner-bracket buttons, colour-flood hovers.
    Loaded after each page's own styles, so it overrides them. Accent stays mint green. */
-:root{--mono:'JetBrains Mono','IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;--pix:'Pixelify Sans','Courier New',ui-monospace,monospace;--bg:#090c0b;--card:#0f1412;--line:#1f2925;--muted:#8fa099;--accent2:#0d2a21}
+:root{--mono:'JetBrains Mono','IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;--pix:'Pixelify Sans','Courier New',ui-monospace,monospace;--bg:#070808;--card:#151a18;--line:#2f3a35;--muted:#b6c2bb;--fg:#f4f7f5;--accent2:#12382c;--accent3:#7c9cff}
 ::selection{background:var(--accent);color:var(--ink)}
 body{background-color:var(--bg);background-image:radial-gradient(rgba(62,224,181,.09) 1px,transparent 1px);background-size:24px 24px;background-repeat:repeat}
 header{background:rgba(9,12,11,.8)}header.sc{background:rgba(9,12,11,.92)}
@@ -67,3 +67,41 @@ footer{font-size:12px;letter-spacing:.06em}
 @media (min-width:1240px){.px{display:grid}}
 @media (max-width:560px){.btn{margin-right:12px}}
 @media (prefers-reduced-motion:reduce){.hero h1::after{animation:none}.px i{transition:none}}
+
+/* v2: brighter, blue highlights, white bands, readable numbers */
+.num{font-family:'Inter',Arial,sans-serif;font-weight:800;font-size:46px;letter-spacing:-1.5px;line-height:1.05;color:var(--accent)}
+.card:nth-child(even) .num,.card:nth-child(even) .k{color:var(--accent3)}
+.card:nth-child(even):hover,a.card:nth-child(even):hover{background:var(--accent3);border-color:var(--accent3);box-shadow:6px 6px 0 0 var(--accent3)}
+.card:nth-child(even) .tag{border-color:var(--accent3);color:var(--accent3)}
+.note .big{font-family:'Inter',Arial,sans-serif;font-weight:800}
+.hl{color:var(--accent);transition:color .3s}.hero h1:hover .hl{color:var(--accent3)}
+.hero h1::after{background:var(--accent3)}
+.k::before,.nav div a.on{color:var(--accent)}
+.nav div a:nth-child(even)::after{background:var(--accent3)}
+.nav div a:nth-child(even):hover{color:var(--accent3)}
+.btn.alt{--c:var(--accent3);border-color:var(--accent3);color:var(--accent3)}
+.btn.alt:hover{background:var(--accent3);color:var(--ink)}
+#prog{background:linear-gradient(90deg,var(--accent),var(--accent3))}
+section:nth-of-type(even)>h2::before{color:var(--accent3)}
+.tag{color:var(--accent)}
+.tl button[aria-selected=true]{background:var(--accent3);border-color:var(--accent3);color:#07101f}
+a{color:var(--accent)}
+.flip .bc{background:var(--accent3);color:#07101f}.flip:nth-child(odd) .bc{background:var(--accent);color:var(--ink)}
+.hp{border-color:var(--accent3)}
+p,li{color:#d5ddd8}.card p,.hero p,.k{color:var(--muted)}
+/* white bands (full-bleed) */
+section.lt{--fg:#0b100e;--muted:#46544d;--card:#ffffff;--line:#d1dad5;--accent:#0b8f6c;--accent2:#e1f4ed;--accent3:#3555d8;--ink:#ffffff;background:#f3f5f2;color:var(--fg);border-top:0;box-shadow:0 0 0 100vmax #f3f5f2;clip-path:inset(0 -100vmax)}
+section.lt p,section.lt li{color:#33413a}
+section.lt .card p,section.lt .k{color:var(--muted)}
+section.lt .card{box-shadow:0 1px 0 var(--line)}
+section.lt .card:hover,section.lt a.card:hover{background:var(--accent);border-color:var(--accent);box-shadow:6px 6px 0 0 rgba(11,143,108,.3)}
+section.lt .card:nth-child(even):hover,section.lt a.card:nth-child(even):hover{background:var(--accent3);border-color:var(--accent3);box-shadow:6px 6px 0 0 rgba(53,85,216,.3)}
+section.lt .tl button{background:#fff;color:var(--muted)}section.lt .tl button[aria-selected=true]{background:var(--accent3);color:#fff}
+section.lt .tlp{background:#fff}
+section.lt .flip .fc{background:#fff}section.lt .flip .bc{color:#fff}
+section.lt .btn{color:#fff;background:var(--accent)}section.lt .btn:hover{background:transparent;color:var(--accent)}
+section.lt .btn.alt{background:transparent;color:var(--accent3)}section.lt .btn.alt:hover{background:var(--accent3);color:#fff}
+section.lt .tbl td,section.lt .tbl th{border-color:var(--line)}
+section.lt .callout{background:var(--accent2)}
+section.lt a:not(.card):not(.btn){color:var(--accent)}
+section.lt .desk{background-color:#fff}

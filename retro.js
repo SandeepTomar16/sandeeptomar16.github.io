@@ -12,7 +12,8 @@
     });
     function paint(cell) {
       var r = Math.random();
-      cell.style.opacity = r < 0.55 ? 0 : (0.08 + Math.random() * 0.5).toFixed(2);
+      cell.style.opacity = r < 0.5 ? 0 : (0.15 + Math.random() * 0.65).toFixed(2);
+      cell.style.background = Math.random() < 0.35 ? '#7c9cff' : '';
     }
     panels.forEach(function (p) { [].forEach.call(p.children, paint); });
     if (still) return;
