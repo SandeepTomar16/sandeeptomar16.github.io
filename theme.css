@@ -63,7 +63,7 @@ section.bg p,section.bg li{color:inherit}
 .card::before{content:none}
 .card::after{content:'';position:absolute;top:-2px;right:-2px;width:62px;height:62px;background:var(--cc,var(--g));border-left:2px solid #111;border-bottom:2px solid #111;border-radius:0 0 0 100%;transition:width .25s,height .25s}
 .card:nth-child(4n+1){--cc:var(--g)}.card:nth-child(4n+2){--cc:var(--o)}.card:nth-child(4n+3){--cc:var(--p)}.card:nth-child(4n){--cc:var(--b)}
-.card:hover,a.card:hover{transform:translate(-3px,-3px);box-shadow:6px 6px 0 #111;background:var(--g);border-color:#111}
+.card:hover,a.card:hover{transform:translate(-3px,-3px);box-shadow:6px 6px 0 #111;background:var(--hv,var(--g));border-color:#111}
 .card:hover::after{width:78px;height:78px}
 .card h3{padding-right:46px;color:#111}
 .card p{color:#44443d;font-size:15.5px}
@@ -124,3 +124,7 @@ section:not(.bg)+section:not(.bg)::before,.bg-p+.bg-p::before,.bg-g+.bg-g::befor
 .flip .fc,.flip .bc{position:relative;inset:auto;grid-area:1/1;height:auto;min-height:190px}
 .flip .bc{font-size:15.5px;line-height:1.55}
 @media (max-width:560px){section{padding:76px 0}.hero{padding:56px 0 64px}}
+
+/* each card floods with its own colour on hover */
+.card:nth-child(4n+1){--hv:var(--g)}.card:nth-child(4n+2){--hv:#f2a68f}.card:nth-child(4n+3){--hv:var(--p)}.card:nth-child(4n){--hv:var(--y)}
+.card:nth-child(4n+2):hover .num{background-image:linear-gradient(transparent 64%,#fff 64%)}
