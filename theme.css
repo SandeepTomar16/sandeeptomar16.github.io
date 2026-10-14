@@ -128,3 +128,12 @@ section:not(.bg)+section:not(.bg)::before,.bg-p+.bg-p::before,.bg-g+.bg-g::befor
 /* each card floods with its own colour on hover */
 .card:nth-child(4n+1){--hv:var(--g)}.card:nth-child(4n+2){--hv:#f2a68f}.card:nth-child(4n+3){--hv:var(--p)}.card:nth-child(4n){--hv:var(--y)}
 .card:nth-child(4n+2):hover .num{background-image:linear-gradient(transparent 64%,#fff 64%)}
+/* tab and chip hover: lift, offset shadow, own colour each */
+.tl button,.toc a{transition:transform .15s,box-shadow .15s,background .2s,color .2s}
+.tl button:hover,.toc a:hover{transform:translate(-2px,-2px);box-shadow:3px 3px 0 #111;color:#111;border-color:#111;background:var(--p)}
+.tl button:nth-child(5n+2):hover,.toc a:nth-child(5n+2):hover{background:var(--y)}
+.tl button:nth-child(5n+3):hover,.toc a:nth-child(5n+3):hover{background:#fff}
+.tl button:nth-child(5n+4):hover,.toc a:nth-child(5n+4):hover{background:#f2a68f}
+.tl button:nth-child(5n):hover,.toc a:nth-child(5n):hover{background:#8fb0ff}
+.tl button:active,.toc a:active{transform:translate(0,0);box-shadow:0 0 0 #111}
+.tl button[aria-selected=true]:hover{background:#111;color:var(--bg)}
