@@ -37,7 +37,7 @@ body{counter-reset:sec}
 section>h2::before{counter-increment:sec;content:counter(sec,decimal-leading-zero) ' /';display:block;font:500 12px var(--mono);letter-spacing:.14em;margin-bottom:14px;color:inherit;opacity:.8}
 /* sections as bands */
 section{position:relative;padding:116px 0;border-top:0;clip-path:inset(0 -100vmax)}
-section::before{content:'';position:absolute;left:-100vmax;right:-100vmax;top:0;height:2px;background:#111}
+section::before{content:'';position:absolute;left:-100vmax;right:-100vmax;top:0;height:1px;background:rgba(17,17,17,.1)}
 section:first-of-type::before{display:none}
 section.bg{background:var(--band);box-shadow:0 0 0 100vmax var(--band);color:var(--fg)}
 .bg-p{--band:var(--p)}.bg-o{--band:var(--o)}.bg-g{--band:var(--g)}.bg-y{--band:var(--y)}
