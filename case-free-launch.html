@@ -1,0 +1,123 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="theme-color" content="#0b0d12"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Free launch: 150K learners in a month | Sandeep Tomar</title><meta name="description" content="How I proposed making a new Salesforce certification course free at K2U, and what it did for learners and revenue."><meta property="og:type" content="website"><meta property="og:site_name" content="Sandeep Tomar"><meta property="og:title" content="Free launch: 150K learners in a month | Sandeep Tomar"><meta property="og:description" content="How I proposed making a new Salesforce certification course free at K2U, and what it did for learners and revenue."><meta property="og:image" content="https://sandeeptomar16.github.io/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="627"><meta property="og:url" content="https://sandeeptomar16.github.io/case-free-launch.html"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://sandeeptomar16.github.io/og-image.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#0b0d12;--fg:#eef1f6;--muted:#9aa3b2;--line:#222835;--card:#121620;--accent:#3ee0b5;--accent2:#10261f;--accent3:#7c9cff;--ink:#06120e;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);background-image:radial-gradient(900px 500px at 85% -10%,rgba(62,224,181,.10),transparent 60%),radial-gradient(700px 400px at -10% 10%,rgba(124,156,255,.08),transparent 60%);background-repeat:no-repeat;color:var(--fg);font:17px/1.65 'Inter',Arial,sans-serif}
+h1,h2,h3,.nav,.tag,.btn,.k{font-family:'Inter',Arial,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,13,18,.72);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);z-index:5}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;gap:12px;flex-wrap:wrap}
+.nav b{font-size:17px;letter-spacing:-.2px}.logo{display:flex;align-items:center;gap:10px;color:var(--fg);text-decoration:none}.logo img{border-radius:7px;transition:transform .3s}.logo:hover img{transform:rotate(-8deg) scale(1.08)}.logo:hover b{color:var(--accent)}.logo b{transition:color .2s}
+.nav div{display:flex;flex-wrap:wrap;gap:2px 18px}.nav div a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+.nav div a:hover,.nav div a.on{color:var(--accent)}
+.hero{padding:64px 0 36px}
+.hero h1{font-size:clamp(36px,6.4vw,58px);line-height:1.05;letter-spacing:-2px;font-weight:800;background:linear-gradient(100deg,#ffffff 30%,var(--accent) 75%,var(--accent3));-webkit-background-clip:text;background-clip:text;color:transparent;margin:0 0 16px;text-wrap:balance}
+.hero p{font-size:19px;color:var(--muted);max-width:640px}
+.tag{display:inline-block;font-size:12px;font-weight:600;color:var(--accent);background:var(--accent2);padding:4px 10px;border-radius:99px;margin:0 6px 8px 0}
+.btn{display:inline-block;background:var(--accent);color:var(--ink);padding:12px 22px;border-radius:99px;text-decoration:none;font-weight:600;font-size:15px;margin:6px 10px 6px 0}
+.btn.alt{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+h2{font-size:28px;font-weight:800;letter-spacing:-.8px;margin:0 0 14px;text-wrap:balance}
+h3{font-size:18px;margin:0 0 4px}
+section{padding:34px 0;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;text-decoration:none;color:inherit;display:block}
+a.card:hover{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent),0 12px 30px -14px rgba(62,224,181,.35)}
+.card p{margin:6px 0 0;color:var(--muted);font-size:15px;line-height:1.5}
+.num{font-family:'Inter',sans-serif;font-size:34px;font-weight:700;letter-spacing:-1px;color:var(--accent);line-height:1}
+.k{font-size:12px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);font-weight:600}
+.job{margin:0 0 22px}.job .d{color:var(--muted);font-size:14px;font-family:'Inter',sans-serif}
+ul{padding-left:20px}li{margin:5px 0}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin:26px 0 8px;padding:18px;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.meta div span{display:block;font-family:'Inter',sans-serif;font-size:15px;font-weight:600}
+.toc{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 6px}
+.toc a{font-family:'Inter',sans-serif;font-size:13px;font-weight:500;padding:6px 12px;border:1px solid var(--line);border-radius:99px;color:var(--muted);text-decoration:none}
+.toc a:hover{color:var(--accent);border-color:var(--accent)}
+.next{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:10px}
+footer{border-top:1px solid var(--line);padding:26px 0 44px;color:var(--muted);font:14px 'Inter',sans-serif}
+.flow{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch;margin:14px 0}
+.flow div{flex:1 1 150px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font:14px/1.4 'Inter',sans-serif}
+.flow div b{display:block;color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.6px;margin-bottom:4px}
+
+.desk{position:relative;height:460px;border:1px solid var(--line);border-radius:16px;background-color:var(--card);background-image:radial-gradient(#2b3242 1px,transparent 1px);background-size:22px 22px;overflow:hidden;margin:6px 0 34px}
+.desk .hint{position:absolute;right:14px;bottom:10px;font:12px 'Inter',sans-serif;color:var(--muted);pointer-events:none}
+.note{position:absolute;width:158px;padding:14px 14px 16px;font:600 14px/1.35 'Inter',sans-serif;color:#2a2618;border-radius:3px;box-shadow:0 8px 14px -6px rgba(0,0,0,.35),0 1px 0 rgba(255,255,255,.4) inset;cursor:grab;user-select:none;touch-action:none;transition:box-shadow .15s,transform .15s}
+.note:active{cursor:grabbing;box-shadow:0 18px 24px -8px rgba(0,0,0,.45)}
+.note small{display:block;font-weight:500;font-size:12px;opacity:.75;margin-top:6px}
+.note .big{display:block;font-size:30px;letter-spacing:-1px;line-height:1.05}
+.y{background:#fde68a}.g{background:#bbf7d0}.p{background:#fbcfe8}.b{background:#bae6fd}.o{background:#fed7aa}
+@media (max-width:560px){.desk{height:auto;display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:14px 14px 40px}.note{position:static!important;width:auto;transform:none!important;touch-action:auto;cursor:pointer;font-size:13px}.note .big{font-size:24px}.desk .hint .dk{display:none}}
+.callout{border-left:3px solid var(--accent);padding:8px 18px;background:var(--accent2);border-radius:0 10px 10px 0;margin:18px 0}.callout b{font-family:'Inter',sans-serif}.chips{margin:8px 0 0}h3.s{font-size:17px;margin:20px 0 6px}
+.tbl{overflow-x:auto;margin:14px 0}.tbl table{border-collapse:collapse;width:100%;min-width:620px;font:14px/1.45 'Inter',sans-serif}.tbl th{text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);border-bottom:2px solid var(--line);padding:8px 10px}.tbl td{border-bottom:1px solid var(--line);padding:10px;vertical-align:top}.tbl td:first-child{font-weight:600}.tbl td:last-child{color:var(--accent);font-weight:600}
+.flip{perspective:1000px;background:none;border:0;padding:0;text-align:left;cursor:pointer;min-height:170px;font:inherit;color:inherit}
+.flip .in{position:relative;width:100%;height:100%;min-height:170px;transition:transform .5s;transform-style:preserve-3d}
+.flip.on .in{transform:rotateY(180deg)}
+.flip .fc,.flip .bc{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:12px;padding:20px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}
+.flip .fc{background:var(--card)}.flip .fc h3{font-size:19px}.flip .fc small{font:600 12px 'Inter',sans-serif;color:var(--accent)}
+.flip .bc{background:var(--accent);color:var(--ink);transform:rotateY(180deg);font:15px/1.5 'Inter',sans-serif}
+.tl{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 16px}
+.tl button{font:600 14px 'Inter',sans-serif;padding:9px 14px;border-radius:99px;border:1.5px solid var(--line);background:var(--card);color:var(--muted);cursor:pointer}
+.tl button[aria-selected=true]{background:var(--accent);border-color:var(--accent);color:var(--ink)}
+.tlp{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.note[data-href]::after{content:'Open →';display:block;font-size:11px;margin-top:8px;opacity:.7}
+@media (prefers-reduced-motion:reduce){.flip .in{transition:none}}
+/* motion */
+#prog{position:fixed;left:0;top:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--accent),var(--accent3));z-index:10;pointer-events:none}
+header{transition:box-shadow .3s,background .3s}header.sc{box-shadow:0 10px 30px -18px rgba(0,0,0,.9);background:rgba(11,13,18,.88)}
+.nav div a{position:relative;transition:color .2s}.nav div a::after{content:'';position:absolute;left:0;right:0;bottom:-4px;height:2px;border-radius:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .25s}.nav div a:hover::after,.nav div a.on::after{transform:scaleX(1)}
+.btn{position:relative;overflow:hidden;transition:transform .2s,box-shadow .25s,background .25s,color .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px -10px rgba(62,224,181,.7)}.btn:active{transform:translateY(0) scale(.97)}
+.btn:not(.alt)::after{content:'';position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:shine 4.5s ease-in-out infinite}
+.btn.alt:hover{background:var(--accent2)}
+@keyframes shine{0%,70%{left:-60%}100%{left:130%}}
+.card{position:relative;transition:transform .25s,border-color .25s,box-shadow .25s}
+.card::before{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),rgba(62,224,181,.13),transparent 60%)}
+.card:hover{transform:translateY(-4px);border-color:rgba(62,224,181,.55);box-shadow:0 16px 34px -18px rgba(62,224,181,.45)}.card:hover::before{opacity:1}
+.hero h1{background-size:220% 100%;animation:hue 7s ease-in-out infinite alternate}
+@keyframes hue{from{background-position:0% 0}to{background-position:100% 0}}
+.hp{animation:floaty 6s ease-in-out infinite;transition:transform .3s}
+@keyframes floaty{0%,100%{translate:0 0}50%{translate:0 -10px}}
+.tag{transition:transform .2s}.tag:hover{transform:translateY(-1px)}
+.note:hover{z-index:3;box-shadow:0 18px 26px -10px rgba(0,0,0,.6)}
+.tlp{animation:fadeUp .45s ease both}.tl button{transition:background .2s,color .2s,border-color .2s,transform .15s}.tl button:hover{transform:translateY(-1px);border-color:var(--accent);color:var(--fg)}
+.flip{transition:transform .2s}.flip:hover{transform:translateY(-3px)}.flip:hover .fc{border-color:rgba(62,224,181,.55)}
+.toc a{transition:color .2s,border-color .2s,background .2s}.toc a:hover{background:var(--accent2)}
+@keyframes fadeUp{from{opacity:0;translate:0 12px}to{opacity:1;translate:0 0}}
+html.js .rv{opacity:0;translate:0 26px;transition:opacity .7s ease,translate .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+html.js .rv.in{opacity:1;translate:0 0}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html.js .rv{opacity:1;translate:none}#prog{display:none}}
+
+.heroflex{display:flex;gap:40px;align-items:center;flex-wrap:wrap-reverse}.ht{flex:1 1 440px;min-width:0}.hp{width:240px;height:240px;max-width:100%;border-radius:50%;object-fit:cover;border:5px solid var(--accent);box-shadow:0 0 0 8px rgba(62,224,181,.08),0 20px 40px -12px rgba(62,224,181,.35)}@media (max-width:560px){.hp{width:150px;height:150px}}
+</style><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css"><script src="theme.js"></script></head><body>
+<div id="prog"></div><header><div class="wrap nav"><a class="logo" href="index.html" aria-label="Sandeep Tomar, home"><img src="favicon.svg" alt="" width="28" height="28"><b>Sandeep Tomar</b></a><div><a href="index.html">Home</a><a href="product.html">What I do</a><a href="projects.html">Work</a><a href="operations.html">Operations</a><a href="about.html">About</a><a href="assets/Sandeep_Tomar_Product_Manager_Resume.pdf">Resume</a><a href="index.html#contact">Contact</a></div></div></header>
+<div class="wrap"><div class="hero" style="padding-bottom:10px"><span class="tag">Case study</span><h1>Making a course free to grow revenue</h1><p>When a new Salesforce certification launched, I proposed we give our course away. About 150K learners joined in the first month, and around 60% of them then bought our $48 course.</p></div>
+<div class="meta"><div class="k">Result<span style="text-transform:none;letter-spacing:0;color:var(--fg)">150K learners in month 1</span></div><div class="k">My role<span style="text-transform:none;letter-spacing:0;color:var(--fg)">Market research, pricing proposal, launch plan</span></div><div class="k">Company<span style="text-transform:none;letter-spacing:0;color:var(--fg)">K2U (K2 Partnering Solutions)</span></div><div class="k">Market<span style="text-transform:none;letter-spacing:0;color:var(--fg)">Mostly US and UK</span></div></div>
+<nav class="toc"><a href="#context">Context</a><a href="#decision">The decision</a><a href="#pushback">The pushback</a><a href="#results">Results</a><a href="#learned">What I took from it</a></nav>
+<section id="context"><h2>Context</h2><p>K2U sells online Salesforce courses and exam preparation, mostly to learners in the US and the UK. When Salesforce launched a popular new certification, a lot of people started looking for a way to prepare for it, and every competitor rushed to sell a course. Most of them priced it at around $19.</p></section>
+<section id="decision"><h2>The decision</h2><p>I researched the market and saw two things. At $19, we would be one more option in a crowded field, and our cost to win each learner would stay high. But the people who take a first course are also the best buyers of the next one.</p><p>So I proposed launching the course free, as an entry point. The aim was to bring learners in at almost no cost, earn their trust with a good course, and then sell them our paid courses.</p><div class="callout"><b>The bet:</b> free costs us the course price, but lowers the cost of winning each learner and raises what each learner is worth over time.</div></section>
+<section id="pushback"><h2>The pushback</h2><p>My Head of Product pushed back hard. His view was that giving a course away would hurt the business and cheapen the brand. I took the concern seriously and went back to the numbers: what each learner would be worth if even a part of them bought again. The CEO backed the plan, and we launched.</p></section>
+<section id="results"><h2>Results</h2><div class="grid"><div class="card"><div class="num">25K</div><div class="k">learners on day one</div></div><div class="card"><div class="num">150K</div><div class="k">learners in the first month</div></div><div class="card"><div class="num">60%</div><div class="k">then bought the $48 admin course</div></div><div class="card"><div class="num">18%</div><div class="k">bought other courses too</div></div></div><p>A free course turned into a large paying base. Most of the people we brought in at no cost went on to buy, and some bought more than one course. Every later launch also had a much bigger audience to start with.</p></section>
+<section id="learned"><h2>What I took from it</h2><ul><li>Do not compare your price with competitors. Compare what each learner is worth over time with what it costs to win them.</li><li>Free works when there is a clear next step to pay for. Here it was the full course, and then other courses.</li><li>When someone pushes back, answer with numbers, not with a bigger argument.</li></ul><div class="next"><a class="btn alt" href="projects.html">All case studies</a><a class="btn" href="index.html#contact">Get in touch</a></div></section></div>
+<script>
+(function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var nums=[].slice.call(document.querySelectorAll('.num'));
+function run(el){var m=el.textContent.match(/^(\D*)(\d+)(.*)$/);if(!m||rm)return;var end=+m[2],t0=null,d=900;
+ function f(t){if(!t0)t0=t;var p=Math.min(1,(t-t0)/d);el.textContent=m[1]+Math.round(end*(1-Math.pow(1-p,3)))+m[3];if(p<1)requestAnimationFrame(f);}requestAnimationFrame(f);}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){run(e.target);io.unobserve(e.target);}})},{threshold:.6});nums.forEach(function(n){io.observe(n)});}
+[].forEach.call(document.querySelectorAll('.flip'),function(b){b.addEventListener('click',function(){b.classList.toggle('on');b.setAttribute('aria-pressed',b.classList.contains('on'))})});
+[].forEach.call(document.querySelectorAll('.tl'),function(t){var bs=[].slice.call(t.querySelectorAll('button'));bs.forEach(function(b){b.addEventListener('click',function(){bs.forEach(function(x){var on=x===b;x.setAttribute('aria-selected',on);document.getElementById(x.getAttribute('aria-controls')).hidden=!on;})})})});
+})();
+document.documentElement.classList.add('js');
+(function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var hd=document.querySelector('header'),pg=document.getElementById('prog');
+function sc(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;if(pg)pg.style.transform='scaleX('+(m>0?h.scrollTop/m:0)+')';if(hd)hd.classList.toggle('sc',h.scrollTop>10);}
+addEventListener('scroll',sc,{passive:true});sc();
+[].forEach.call(document.querySelectorAll('.card'),function(c){c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px');});});
+if(rm||!('IntersectionObserver' in window))return;
+var els=[].slice.call(document.querySelectorAll('section > h2, section > .k, section > p, .grid, .meta, .toc, .desk, .tl, .flow, .callout, .tbl, .next, .job, section > ul'));
+els.forEach(function(el){if(el.closest('.grid')&&!el.classList.contains('grid'))return;el.classList.add('rv');});
+[].forEach.call(document.querySelectorAll('.grid'),function(g){[].forEach.call(g.children,function(c,i){c.classList.add('rv');c.style.setProperty('--d',(i*0.08)+'s');});g.classList.remove('rv');});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+[].forEach.call(document.querySelectorAll('.rv'),function(el){io.observe(el)});
+})();
+</script>
+<footer><div class="wrap">&copy; 2026 Sandeep Tomar &middot; Gurugram, India &middot; <a href="https://www.linkedin.com/in/sandeep-tomar-81690125">LinkedIn</a> &middot; <a href="https://github.com/SandeepTomar16">GitHub</a></div></footer></body></html>
